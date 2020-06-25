@@ -1,0 +1,26 @@
+[
+  {
+
+    "itemname": "Cold Coffee",
+    "PickupAddress": {
+      "address": "CCD Chennai",
+      "phonenumber": 9543722243
+    },
+    "picked": false,
+    "delivered": false,
+    "deliveryaddress": "Anna Nagar",
+    "phonenumber": 123
+  },
+  {
+
+    "itemname": "Brownie",
+    "PickupAddress": {
+      "address": "CCD Telangana",
+      "phonenumber": 9543722243
+    },
+    "picked": true,
+    "delivered": false,
+    "deliveryaddress": "OMR Road",
+    "phonenumber": 123
+  }
+]
