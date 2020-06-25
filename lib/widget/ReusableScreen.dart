@@ -27,6 +27,7 @@ class _ReusableScreenState extends State<ReusableScreen> {
     parseddata=[];
     condition=[];
     int j=0;
+
     if(widget.screenTitle=="Delivery"){
       ordercomplete="All current orders are Delivered!!!!";
     for(int i=0;i<alldata.length;i++) {
@@ -48,6 +49,9 @@ class _ReusableScreenState extends State<ReusableScreen> {
             }
           }
         }
+    }
+    if(widget.screenTitle=="Track"){
+      ordercomplete="No Data Available!!";
     }
     setState(() {
       isLoading=false;
@@ -194,7 +198,7 @@ class _ReusableScreenState extends State<ReusableScreen> {
               backgroundColor: Colors.grey[200],
               appBar: new AppBar(
                 backgroundColor: Colors.red[700],
-                title: new Text("Pickup",
+                title: new Text(widget.screenTitle,
                   style: new TextStyle(color: Colors.white),
                 ),
               ),
@@ -208,7 +212,7 @@ class _ReusableScreenState extends State<ReusableScreen> {
         backgroundColor: Colors.grey[200],
         appBar: new AppBar(
           backgroundColor: Colors.red[700],
-          title: new Text("Pickup",
+          title: new Text(widget.screenTitle,
             style: new TextStyle(color: Colors.white),
           ),
         ),
